@@ -45,7 +45,7 @@ Public IP address: 34.214.237.115
 
 	`sudo apt-get install finger`
 
- Create a new user account named grader with the following command.
+- Create a new user account named grader with the following command.
 
    `sudo adduser grader`
 
@@ -167,9 +167,9 @@ Public IP address: 34.214.237.115
 
 - Install mod_wsgi and create catalog.wsgi
 
-		`sudo apt-get install libapache2-mod-wsgi`
+	`sudo apt-get install libapache2-mod-wsgi`
 
-		`sudo nano /var/www/catalog/catalog.wsgi`
+	`sudo nano /var/www/catalog/catalog.wsgi`
 
 	* Add the following into catalog.wsgi.
 
@@ -220,6 +220,10 @@ Public IP address: 34.214.237.115
 - Check if installation is successful.
 
 	`sudo python __init__.py`
+
+- Deactivate venv
+
+	`deactivate`
 
 
 	Source: [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
@@ -288,7 +292,7 @@ Public IP address: 34.214.237.115
 
 - Create a new database user named 'catalog' with the password 'catalog'
 
-		`CREATE USER catalog PASSWORD 'catalog';`
+	`CREATE USER catalog PASSWORD 'catalog';`
 
 - Create a new database owned by the catalog user.
 
