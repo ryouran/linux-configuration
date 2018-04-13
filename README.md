@@ -39,9 +39,9 @@ Public IP address: 34.214.237.115
 	`ssh -i ~/.ssh/<yourPrivateKeyFile>.pem ubuntu@34.214.237.115`
 
 
-#### Add grader user and give the permissino to sudo
+#### Add grader user and give the permission to sudo
 
-- Install to finger to check the user status
+- Install finger to check the user status
 
 	`sudo apt-get install finger`
 
@@ -120,7 +120,7 @@ Public IP address: 34.214.237.115
 
 	`ssh -i ~/.ssh/<YourPrivateKey>.pem -p 2200 ubuntu@34.214.237.115`
 
-#### Diable password authentication and disable ssh login for root user
+#### Disable password authentication and disable ssh login for root user
 
 - Open sshd_config with the following command.
 
