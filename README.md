@@ -167,9 +167,9 @@ Public IP address: 34.214.237.115
 
 - Install mod_wsgi and create catalog.wsgi
 
-			`sudo apt-get install libapache2-mod-wsgi`
+		`sudo apt-get install libapache2-mod-wsgi`
 
-			`sudo nano /var/www/catalog/catalog.wsgi`
+		`sudo nano /var/www/catalog/catalog.wsgi`
 
 	* Add the following into catalog.wsgi.
 
@@ -185,7 +185,7 @@ Public IP address: 34.214.237.115
 		application.secret_key = 'super_secret_key'
 		```
 
-		Sourec: [http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
+		Source: [http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
 
 #### Create virtual environment for the catalog app.
 
@@ -283,7 +283,7 @@ Public IP address: 34.214.237.115
 
 	```
 	sudo su - postgres
-		psql
+	psql
 	```
 
 - Create a new database user named 'catalog' with the password 'catalog'
@@ -314,7 +314,7 @@ Public IP address: 34.214.237.115
 
 - Edit the create_engine line in mod_db/connect_db.py, db_setup.py, homework_items.py as follows.
 
-		`create_engine('postgresql://catalog:catalog@localhost/catalog')`
+	`create_engine('postgresql://catalog:catalog@localhost/catalog')`
 
 
 - Check no remote connections are allowed.  
@@ -329,7 +329,7 @@ Public IP address: 34.214.237.115
 		local   all             all                                     peer
 		host    all             all             127.0.0.1/32            md5
 		host    all             all             ::1/128                 md5
-	```
+		```
 
 
 - Run `python db_setup.py`
@@ -391,7 +391,7 @@ Public IP address: 34.214.237.115
 
 - Fix for 404 Error 
 
-	I moved the lines to register bluerpints out of the if block as the catalog module gets imported by the catatlog.conf file.
+	I moved the lines to register bluerpints out of the if block as the catalog module gets imported by the catatlog.conf file. 
 
 	```
 	from flask import Flask
