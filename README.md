@@ -211,7 +211,7 @@ Public IP address: 34.214.237.115
 	sudo pip install httplib2 oauth2client sqlalchemy requests psycopg2-binary
 	```
 
-- Rename application.py to __init__.py in `/var/www/catalog/catalog` directory.
+- Rename application.py to \_\_init\_\_.py in `/var/www/catalog/catalog` directory.
 
 	`sudo mv application.py __init__.py`
 
@@ -391,11 +391,11 @@ Public IP address: 34.214.237.115
 		`sudo tail -f /var/log/apache2/error.log`
 
 
-### Changes to \_init\__.py
+### Changes to \_\_init\_\_.py`
 
 - Fix for 404 Error 
 
-	I moved the lines to register bluerpints out of the if block as the catalog module gets imported by the catatlog.conf file. 
+	I moved the lines to register blueprints out of the if block as the catalog module gets imported by the catatlog.conf file. 
 
 	```
 	from flask import Flask
